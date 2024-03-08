@@ -4,7 +4,7 @@ resource "aws_db_subnet_group" "db_subnet_group" {
   name                = local.db_subnet_groupname
   subnet_ids          = data.aws_subnets.subnet_tags.ids
 
-  depends_on = [ aws_subnet.subnets ]
+  depends_on = [ aws_subnet.db_subnets ]
 }
 
 resource "aws_db_instance" "database" {

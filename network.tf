@@ -43,5 +43,5 @@ resource "aws_security_group" "db_SG" {
     tags                 = {
         Name   = "DB-Security"
     }
-    depends_on = [ aws_vpc.ntier, aws_subnet.subnets ]
+    depends_on = [ aws_vpc.ntier, aws_subnet.db_subnets ]
 }

@@ -1,5 +1,5 @@
 output "subnet_testing" {
-    value       = aws_subnet.subnets
+    value       = aws_subnet.db_subnets
 }
 
 output "db_instance_id" {
